@@ -17,6 +17,5 @@ for (root, dir, files) in os.walk(location):
                         if len(df.columns)==len(df2.columns) and len(df.index)==len(df2.index):
                             os.remove(os.path.join(os.path.abspath(root), files[file1]))
         except Exception as e:
-            print("%s: %s"%(e.__class__.__name__, e))
             print("File Deleted!", os.path.join(os.path.abspath(root), files[file1]))
 
